@@ -17,7 +17,7 @@ const { width } = Dimensions.get("screen");
 
 const styles = StyleSheet.create({
   header: {
-    height: 40,
+    height: 50,
     flexDirection: "row",
     paddingHorizontal: 18,
     alignItems: "center",
@@ -42,7 +42,7 @@ export default (props, navigation) => {
         <View style={{...styles.header}}>
         {/* <Icon name='arrow-back' type='AntDesign' color='white' onPress={() => navigation.navigate("HomeScreen")} /> */}
         <Icon name='arrow-back' type='AntDesign' color='white' onPress={() => alert("Error Gabisa Navigate Ke HomeScreen")}/>
-          <Text style={{ fontSize: 25, color: "white"}}> {restaurantDetail.restaurantName}</Text>
+          <Text style={{ fontSize: 20, color: "white"}}> {restaurantDetail.restaurantName}</Text>
         </View>
         <Image style={{ maxHeight: 300 }} width={width} source={{ uri: restaurantDetail.image }}/>
         <View style={{ ...styles.commentContainer }}>
